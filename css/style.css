@@ -1,0 +1,547 @@
+/*
+	Theme Name: CSS3 Contact Form
+	Date: April 2013
+	Description: Basic HTML5/CSS3 contact form
+	Version: 1.0
+	Author: Christian Vasile
+	Author URL: http://christianvasile.com
+*/
+#example2 { width: 150px; }
+#example1 { width: 550px; }
+header.major {
+  text-align: center;
+  font-family: 'Segoe UI Light', Segoe UI;
+}
+
+  header.major h2 {
+    font-size: 3em;
+    font-family: 'Segoe UI Light';
+  }
+
+  header.major p {
+    display: inline-block;
+  }
+
+/* ===========================
+   ======= Body style ========
+   =========================== */
+
+body {
+	font-family: 'Segoe UI Light', Segoe UI;
+  font-size: 1.25em;
+  transition: background 1s ease;
+   background: #3498db;
+   text-align: left;
+
+	/*padding: 50px 100px;
+	font-size: 13px;
+	font-style: Verdana, Tahoma, sans-serif;*/
+}
+
+h2 {
+	font-size: 1.75em;
+  line-height: 1.5em;
+	/*margin-bottom: 20px;*/
+	color: #474E69;
+  font-family: 'Segoe UI Light';
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.5em;
+  font-family: 'Segoe UI Light', Segoe UI;
+}
+
+.button {
+  -moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-box-shadow: #6E7849 0 0 10px;
+  -webkit-transition: all 0.1s ease;
+  background-color: #8888FF;
+  border: 2px solid #8888FF;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.25em;
+  margin: auto;
+
+  text-decoration: none;
+  transition: all 0.1s ease;
+  width: 140px;
+  height: 40px;
+}
+
+/* ===========================
+   ====== Contact Form =======
+   =========================== */
+
+input, textarea {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 200px;
+	color: #999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+textarea {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+	width: 600px;
+	height: 150px;
+	max-width: 600px;
+	line-height: 18px;
+}
+
+
+.formfield * {
+    vertical-align: middle;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: 1px solid #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+}
+
+/* ===========================
+   ====== Submit Button ======
+   =========================== */
+
+.submit input {
+
+	-moz-transition: all 0.1s ease;
+  -ms-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  -webkit-box-shadow: #6E7849 0 0 10px;
+  -webkit-transition: all 0.1s ease;
+  background-color: #8888FF;
+  border: 2px solid #8888FF;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.25em;
+  margin: auto;
+
+  text-decoration: none;
+  transition: all 0.1s ease;
+  width: 120px;
+  height: 40px;
+
+	/*width: 100px;
+	height: 40px;
+	background-color: #474E69;
+	color: #FFF;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;*/
+}
+
+/* Stylesheet */
+
+
+/* Imports */
+
+@import url(animate.css);
+
+/* Selections */
+
+::selection {
+ 	color: #fff;
+ 	text-shadow: none;
+ 	background: #444;
+}
+
+::-moz-selection {
+ 	color: #fff;
+ 	text-shadow: none;
+ 	background: #444;
+}
+
+/* Basics */
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Segoe UI Light', Segoe UI;
+  font-size: 1em;
+	color: #444;
+	-webkit-font-smoothing: antialiased;
+	background: #f0f0f0;
+  text-align: left;
+
+}
+
+#container {
+	position: fixed;
+	width: 340px;
+	height: 280px;
+	top: 50%;
+	left: 50%;
+	margin-top: -140px;
+	margin-left: -170px;
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+	-webkit-animation-name: bounceIn;
+	-webkit-animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	-moz-animation-name: bounceIn;
+	-moz-animation-fill-mode: both;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-timing-function: linear;
+	animation-name: bounceIn;
+	animation-fill-mode: both;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+form {
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+label {
+	color: #555;
+	display: inline-block;
+	margin-left: 18px;
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+p a {
+	font-size: 11px;
+	color: #aaa;
+	float: right;
+	margin-top: -13px;
+	margin-right: 20px;
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+p a:hover {
+	color: #555;
+}
+
+input {
+	font-family: "FontAwesome", FontAwesome, sans-serif;
+	font-size: 12px;
+	outline: none;
+}
+
+input[type=name],
+input[type=password] {
+	color: #777;
+	margin-top: 12px;
+	/*border: 1px solid #c7d0d2;
+	border-radius: 2px;
+	box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;*/
+	-webkit-transition: all .4s ease;
+	-moz-transition: all .4s ease;
+	transition: all .4s ease;
+}
+
+input[type=name]:hover,
+input[type=password]:hover {
+	/*border: 1px solid #b6bfc0;
+	box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0 0 0 5px #f5f7f8;*/
+}
+
+input[type=name]:focus,
+input[type=password]:focus {
+	/*border: 1px solid #a8c9e4;
+	box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;*/
+}
+
+#lower {
+	background: #ecf2f5;
+	width: 100%;
+	height: 69px;
+	margin-top: 20px;
+	box-shadow: inset 0 1px 1px #fff;
+	border-top: 1px solid #ccc;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+/*input[type=checkbox] {
+	margin-left: 20px;
+}*/
+
+/* checkbox and radio buttons*/
+input[type="checkbox"],
+input[type="radio"] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	display: block;
+	float: left;
+	margin-right: -2em;
+	opacity: 0;
+	width: 1em;
+	z-index: -1;
+}
+
+
+
+.check {
+	margin-left: 3px;
+	font-size: 11px;
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
+
+input[type=submit] {
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	width: 160px;
+	height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
+	background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+	background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
+	border-radius: 30px;
+	border: 1px solid #66add6;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	/*background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
+	background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
+	background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);*/
+
+	color: #fff;
+  background-color: 8888FF;
+  border: 2px solid #fff;
+}
+
+input[type=submit]:active {
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
+	background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+	background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
+}
+
+/*
+http://www.freshdesignweb.com/beautiful-registration-form-with-html5-and-css3.html
+*/
+
+.form{
+	background:#f1f1f1; width:470px; margin:0 auto; padding-left:50px; padding-top:20px;
+}
+.form fieldset{border:0px; padding:0px; margin:0px;}
+.form p.contact { font-size: 12px; margin:0px 0px 10px 0;line-height: 14px; font-family:FontAwesome, Helvetica;}
+.form .select-style {
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(images/select-arrow.png),
+    -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 0px solid #FFF;
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;}
+.form .gender {
+  width:410px;
+  }
+.form input.buttom{ background: #4b8df9; display: inline-block; padding: 5px 10px 6px; color: #fbf7f7; text-decoration: none; font-weight: bold; line-height: 1; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 1px 3px #999; -webkit-box-shadow: 0 1px 3px #999; box-shadow: 0 1px 3px #999; text-shadow: 0 -1px 1px #222; border: none; position: relative; cursor: pointer; font-size: 14px; font-family:FontAwesome, Geneva, sans-serif;}
+.form input.buttom:hover	{ background-color: #2a78f6; }
+.form-signin{
+	max-width: 700px;
+}
+.form-register{
+	max-width: 700px;
+  text-align: left;
+}
+.form-register span {
+  display: table-cell;
+    vertical-align: middle;
+    width:250px;
+}
+
+.form-register input {
+  float:right;
+  display:inline;
+}
+
+label, input {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 295px;
+}
+
+label {
+    color: #2D2D2D;
+    font-size: 15px;
+}
+
+form, input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+form {
+    width: 700px;
+}
+
+
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	text-decoration: none;
+	color: #444;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: 300;
+	padding-left: 2.4em;
+	padding-right: 0.75em;
+	position: relative;
+}
+
+	input[type="checkbox"] + label:before,
+	input[type="radio"] + label:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+	}
+
+	input[type="checkbox"] + label:before,
+	input[type="radio"] + label:before {
+		background: rgba(144, 144, 144, 0.075);
+		border-radius: 4px;
+		border: solid 1px rgba(144, 144, 144, 0.25);
+		content: '';
+		display: inline-block;
+		height: 1.65em;
+		left: 0;
+		line-height: 1.58125em;
+		position: absolute;
+		text-align: left;
+		top: 0;
+		width: 1.65em;
+	}
+
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+	background: #3ba666;
+	border-color: #3ba666;
+	color: #ffffff;
+	content: '\f00c';
+}
+
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+	border-color: #4dac71;
+	box-shadow: 0 0 0 1px #4dac71;
+}
+
+input[type="checkbox"] + label:before {
+border-radius: 4px;
+}
+
+input[type="radio"] + label:before {
+border-radius: 100%;
+}
+
+p {
+  color: #ecf0f1;
+  font-size: 1em;
+  text-align: left;
+  width: inherit;
+
+}
+
+span {
+  clear: both;
+  font-size: .7em;
+  color: #bdc3c7;
+}
+
+a {
+  /*color: #c0392b;*/
+  text-decoration: none;
+}
+
+.slide {
+
+  .inside {
+    display: table;
+    height: 100%;
+    width: 100%;
+    padding: 0 3em;
+
+    p {
+      display: table-cell;
+      width: 100%;
+      clear: both;
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+}
+
+ul li{
+    padding-left:30px;
+}
+
+ul.inside-list {
+    list-style-position: inside;
+}
+
+ul.outside-list {
+    list-style-position: outside;
+}
+
+/* this for read more.. and read less... lnks */
+a {
+	color: #0254EB
+}
+a:visited {
+	color: #0254EB
+}
+a.morelink {
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+}
+.comment {
+	width: 400px;
+	background-color: #f0f0f0;
+	margin: 10px;
+}

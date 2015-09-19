@@ -1,0 +1,34 @@
+{
+  "name": "klouds-homepage",
+  "version": "0.0.1",
+  "description": "The klouds homepage",
+  "main": "submissions/form.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mhtranbn/kloudsTemp.git"
+  },
+  "author": "tranmanhhoang@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhtranbn/kloudsTemp/issues"
+  },
+  "homepage": "https://github.com/mhtranbn/kloudsTemp",
+  "dependencies": {
+    "kcors": "^1.0.1",
+    "koa": "^1.0.0",
+    "koa-generic-session": "^1.9.2",
+    "koa-json": "^1.1.1",
+    "koa-json-body": "^4.0.0",
+    "koa-mount": "^1.3.0",
+    "koa-redis": "^1.0.1",
+    "koa-route": "^2.4.2",
+    "koa-static": "^1.4.9",
+    "octonode": "^0.7.1",
+    "passport": "^0.3.0",
+    "redis": "^0.12.1",
+    "then-redis": "^1.3.0"
+  }
+}
