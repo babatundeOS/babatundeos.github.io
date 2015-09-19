@@ -58,8 +58,8 @@ h3 {
   -o-transition: all 0.1s ease;
   -webkit-box-shadow: #6E7849 0 0 10px;
   -webkit-transition: all 0.1s ease;
-  background-color: #8888FF;
-  border: 2px solid #8888FF;
+  background-color: #474E69;
+  border: 2px solid #474E69;
   color: #fff;
   display: inline-block;
   font-size: 1.25em;
@@ -78,7 +78,7 @@ h3 {
 input, textarea {
 	padding: 10px;
 	border: 1px solid #E5E5E5;
-	width: 200px;
+	width: 400px;
 	color: #999999;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
@@ -89,7 +89,7 @@ textarea {
   display: inline;
   margin-left: auto;
   margin-right: auto;
-	width: 600px;
+	width: 400px;
 	height: 150px;
 	max-width: 600px;
 	line-height: 18px;
@@ -545,3 +545,19 @@ a.morelink {
 	background-color: #f0f0f0;
 	margin: 10px;
 }
+
+
+/* This CSS is used for the Show/Hide functionality used in the About Us section. */
+.more {
+	display: none;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666; }
+a.showLink, a.hideLink {
+	text-decoration: none;
+	color: #36f;
+	padding-left: 8px;
+	background: transparent url(down.gif) no-repeat left; }
+a.hideLink {
+	background: transparent url(up.gif) no-repeat left; }
+a.showLink:hover, a.hideLink:hover {
+	border-bottom: 1px dotted #36f; }

@@ -29,23 +29,22 @@
   <script src="js/shortener.js"></script>
   <script type="text/javascript"	src="js/shorten.1.0.js"></script>
 
-  <script type="text/javascript">
-	$(document).ready(function() {
-		$(".comment").shorten();
-	});
-</script>
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <!-- Basics -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Login</title>
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
+
+
+
 
 <title>CSS Contact Form</title>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-<!-- Basics -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>Login</title>
-<!-- CSS -->
-<!-- <link rel="stylesheet" href="css/reset.css"> -->
-<link rel="stylesheet" href="css/animate.css">
-<!-- <link rel="stylesheet" href="css/styles.css"> -->
+
 
 <title>Register</title>
 
@@ -104,7 +103,7 @@
           <header class="major" class="slide slide-one" data-background="#3498db">
             <br><br><br><br><br><br>
             <h2>Klouds.io</h2>
-            <p>...the best app store for open source web applications.
+            <p>...the best app store for open source web applications. </p>
           </header>
         </div>
       </div>
@@ -121,19 +120,12 @@
           <h2></h2>
           <h2>Apps</h2>
           <p></p>
-        </p>
-        <br> <div style="text-align: left">Coming soon. We’d contact you when released. Signup below</p>
+        <br>
+        <div style="text-align: left">Coming soon. We’d contact you when released. Signup below</p>
           <h2><br></h2>
-          <h2></h2>
-          <h2></h2>
-          <h2></h2>
-          <h2></h2>  <h2><br></h2>
-          <h2><br></h2>
-          <h2><br></h2>
-          <h2><br></h2>
-        </p>
       </div>
     </div>
+  </div>
 
     <div class="row how-it-work text-center">
 
@@ -158,18 +150,41 @@
                 <li>Giving the open-source app authors the chance to make income from their awesome apps.
                   They will get one-third from the monthly subscription of their app users on our system. </li>
               </ul>
-              <a> Read more... </a>
+              <a href="#" id="example-show" class="showLink" onclick="showHide('example');return false;">Read more...</a>
+
+              <div id="example" class="more">
+          			<p>
+                  <h3>Who we are (to the public) </h3>
+                    Klouds.io is a software as a service platform for open source softwares.
+                    We discovered that there are awesome open source web applications but are just kinda lost in the open source community and never get to those that really need them.
+                    Furthermore, sometimes when people get a hold of these web application, the installation process gives a headache not to mention managing it.
+                    Klouds.io is here to put your troubles away and make things easier.
+                    We present you with those open source apps that are needed for your business and also allow you to launch and start using them with just a click of a button; no configuration needed.
+                  <h3>Who we are (to open source developers) </h3>
+                    Klouds.io is a money as a service platform for all your open source apps.
+                    Though open source apps can be taken, used, sold by anyone even without the consent of the app developer(s), but here at Klouds, we want to change that.
+                    We would host the open source apps with the approval of the authors and the authors will also get ⅓ of the subscription paid by the users of their apps on our system.
+                    We appreciate the effort you have put into developing your apps, so we want to compensate that by giving you ⅓ of what the users of your app pays.
+                  <h3>Who we are (to the open source community) </h3>
+                    We are turning the open source community around.
+                    It is known that open source is a non profit making community but yet developers try as much as possible to develop good softwares and mostly without making any sort of income from it.
+                    Wouldn’t it be awesome to know as an open source developer that income could be made on open source applications?
+                    This wouldn’t only give the app developers income, it also gives them the urge to upgrade their applications and develop more over time. Why wouldn’t they?
+                    They probably get paid to work from home at their own convenience than to work for a company.
+                    Furthermore by exposing the open source apps to the public,
+                    people get to know more about these apps and entire world can use them which would speed them up when all they have to focus on is what’s more important in their business.
+                </p>
+          			<a href="#" id="example-hide" class="hideLink" onclick="showHide('example');return false;">Hide this content.</a>
+        		  </div>
           </div>
         </div>
 
         <div class="container">
           <div class="row job-posting wow fadeInUp" data-wow-delay="1s">
             <div role="tabpanel">
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#job-seekers" aria-controls="home" role="tab" data-toggle="tab">Teams</a></li>
 
-              </ul>
+              <h3 style="text-align: left"> Team </h3>
+              <hr style="border-bottom: 1px solid black;">
               <!-- Tab panes -->
               <div class="tab-content">
                 <div role="tabpanel" class="tab-pane fade in active" id="job-seekers">
@@ -253,31 +268,28 @@
                     <label for="name">
                       Name:
                     </label>
-                    <input id="author-name" type="text" placeholder="Name" required>
+                    <input id="author-name" type="text" placeholder="Contact Name" required>
 
                     <label for="email">
                       Email:
                     </label>
                     <input id="author-email" type="text" placeholder="Contact email" required>
-
-                    <label for="github">
-                      GitHub Profile:
-                    </label>
-                    <input id="author-github" type="text" placeholder="Link" required>
-
-                    <label for="textarea">
-                      Apps on GitHub:
-                    </label>
+                    <!--
+                    <label for="textarea">Apps on GitHub: </label>
                     <textarea id="author-apps" class="comments" style="margin-left:45% display: inline" required></textarea>
-                    <button id="author-submit" class="play_button" style="float: right" type="button">Submit</button>
-                    <button id="github-submit" class="logIn_bygit" style="" type="button">Sign with github</button>
+                  -->
+                    <br/><br/>
+                    <button id="author-submit" class="button" style="width: 280px; float: right" type="button">Submit & Signup with github</button>
+
+                    <!-- <button id="github-submit" class="button" style="width: 280px; float: right " type="button">Submit & Signup with github</button> -->
                   </form>
 
-                  <div class="row how-it-work text-center"></div>
                 </div>
-                <hr />
               </div>
             </div>
+          </div>
+
+          <br/><br/><br/><br/>
 
             <div class="content-area" id="contact">
               <div class="content-area">
@@ -286,19 +298,17 @@
                     <h2><br /></h2>
                     <h2>Contact us</h2>
                     <form>
-                      <label for="contact-name">Name:</label><input type="text" id="contact-name" placeholder=
-                      "Name" required/>
-                      <label for="contact-email">Email:</label><input type="email" id="contact-email"
-                      placeholder="Contact email" required />
-                    </form>
+                      <label for="contact-name">Name:</label><input type="text" id="contact-name" placeholder="Name" required/>
+                      <label for="contact-email">Email:</label><input type="email" id="contact-email" placeholder="Contact email" required />
+                      <label for="contact-message">Message:</label>
 
-                    <p class="formfield">
-                      <textarea id="textarea" rows="5">
-                      </textarea></p>
-                    </div>
+                      <textarea id="contact-message" rows="4" cols="50" placeholder="Message" required></textarea>
+
+                    </form>
+                  </div>
 
                     <form id="contact" action="/contact" method="post" class="form" role="form" name="contact"></form>
-                    <div><button class="button" type="sendmessage">SendMessage</button>
+                    <div><button class="button" type="sendmessage">SendMessage</button> </div>
                       <div>
                         <div class="row how-it-work text-center"></div>
                       </div>
@@ -306,25 +316,20 @@
                         <!-- <div class="container"> -->
                           <p style="text-align:right">(C) Webstie, All rights reserved.           Web Designed by Klouds.</p>
 
-                            <!-- <a> -->
-
-                              <!-- <a> -->
-                              <!-- <a href="https://plus.google.com/102632111282126849104/posts"> This is hoangmanhtran-->
-
-
-                            <!-- </div> -->
-                          </div>
-                          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-                          <script>
-                          window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
-                          </script>
-                          <script src="js/bootstrap.min.js"></script>
-                          <script src="js/owl.carousel.min.js"></script>
-                          <script src="js/wow.js"></script>
-                          <script src="js/main.js"></script>
-                          <script scr="js/jquery.scrollie.min_1.js"></script>
-                          <script src="js/jquery.scrolly.min.js"></script>
-                          <script src="js/jquery.scrollzer.min.js"></script>
-                        </body>
-
-                        </html>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+      </script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/wow.js"></script>
+      <script src="js/main.js"></script>
+      <script scr="js/jquery.scrollie.min_1.js"></script>
+      <script src="js/jquery.scrolly.min.js"></script>
+      <script src="js/jquery.scrollzer.min.js"></script>
+  </body>
+</html>
