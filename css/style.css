@@ -10,12 +10,13 @@
 #example1 { width: 550px; }
 header.major {
   text-align: center;
-  font-family: 'Segoe UI Light', Segoe UI;
+  font-family: 'Roboto';
+  font-weight: 200;
 }
 
   header.major h2 {
-    font-size: 3em;
-    font-family: 'Segoe UI Light';
+    font-family: 'Roboto';
+    font-weight: 200;
   }
 
   header.major p {
@@ -25,31 +26,32 @@ header.major {
 /* ===========================
    ======= Body style ========
    =========================== */
+ html, body {
+   	width: 100%;
+   	height: 100%;
+   	font-family: 'Roboto';
+    font-weight: 200;
+    font-size: 1em;
+   	color: #444;
+   	-webkit-font-smoothing: antialiased;
+   	background: #f0f0f0;
+     text-align: left;
 
-body {
-	font-family: 'Segoe UI Light', Segoe UI;
-  font-size: 1.25em;
-  transition: background 1s ease;
-   background: #3498db;
-   text-align: left;
+ }
 
-	/*padding: 50px 100px;
-	font-size: 13px;
-	font-style: Verdana, Tahoma, sans-serif;*/
-}
 
 h2 {
-	font-size: 1.75em;
-  line-height: 1.5em;
 	/*margin-bottom: 20px;*/
 	color: #474E69;
-  font-family: 'Segoe UI Light';
+  font-family: 'Roboto';
+  font-weight: 400;
 }
 
 h3 {
   font-size: 1.75em;
   line-height: 1.5em;
-  font-family: 'Segoe UI Light', Segoe UI;
+  font-family: 'Roboto';
+  font-weight: 200;
 }
 
 .button {
@@ -62,13 +64,13 @@ h3 {
   border: 2px solid #474E69;
   color: #fff;
   display: inline-block;
-  font-size: 1.25em;
+  font-size: 1em;
   margin: auto;
-
   text-decoration: none;
   transition: all 0.1s ease;
-  width: 140px;
+  width: 160px;
   height: 40px;
+  text-align: center;
 }
 
 /* ===========================
@@ -78,21 +80,11 @@ h3 {
 input, textarea {
 	padding: 10px;
 	border: 1px solid #E5E5E5;
-	width: 400px;
+	width: 1000px;
 	color: #999999;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-}
-
-textarea {
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
-	width: 400px;
-	height: 150px;
-	max-width: 600px;
-	line-height: 18px;
 }
 
 
@@ -118,7 +110,6 @@ input:focus, textarea:focus {
    =========================== */
 
 .submit input {
-
 	-moz-transition: all 0.1s ease;
   -ms-transition: all 0.1s ease;
   -o-transition: all 0.1s ease;
@@ -168,17 +159,6 @@ input:focus, textarea:focus {
 
 /* Basics */
 
-html, body {
-	width: 100%;
-	height: 100%;
-	font-family: 'Segoe UI Light', Segoe UI;
-  font-size: 1em;
-	color: #444;
-	-webkit-font-smoothing: antialiased;
-	background: #f0f0f0;
-  text-align: left;
-
-}
 
 #container {
 	position: fixed;
@@ -396,12 +376,19 @@ http://www.freshdesignweb.com/beautiful-registration-form-with-html5-and-css3.ht
 label, input {
     display: inline-block;
     vertical-align: baseline;
-    width: 295px;
+    font-family: 'roboto';
+    font-weight: 500;
+}
+
+input, textarea{
+  width: 300px;
 }
 
 label {
     color: #2D2D2D;
-    font-size: 15px;
+    font-family: 'roboto';
+    font-weight: 400;
+    width: 150px;
 }
 
 form, input {
@@ -411,7 +398,7 @@ form, input {
 }
 
 form {
-    width: 700px;
+    width: 50%;
 }
 
 
