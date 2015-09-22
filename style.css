@@ -265,7 +265,7 @@ transition: .5s ease;
 }
 .page-title h2 {
   font-size: 25px;
-  font-weight: 800;
+  font-weight: 300;
   margin-top: 5px;
   text-transform: uppercase;
 }
@@ -396,8 +396,9 @@ transition: .5s ease;
   position: absolute;
   left: 15px;
   color: #fff;
-  font-weight: 700;
-  font-size: 17px;
+	font-family: 'roboto';
+  font-weight: 300;
+  font-size: 15px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
